@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Flex, Heading, Link as ChakraLink } from "@chakra-ui/react";
 import NextLink from "next/link";
 import ConnectWalletButton from "../components/ConnectWalletButton";
 
 const Layout = ({ children }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <Box>
       <Flex
@@ -51,7 +57,7 @@ const Layout = ({ children }) => {
           </ChakraLink>
 
           {/* Connect Wallet button */}
-          <ConnectWalletButton />
+          {isClient && <ConnectWalletButton />}
         </Flex>
       </Flex>
 
