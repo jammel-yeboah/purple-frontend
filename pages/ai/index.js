@@ -126,7 +126,7 @@ export default function PurpleAIWaitlist() {
       <Text mt={6} fontSize="md" color="gray.200">
         Meanwhile, follow us on{" "}
         <ChakraLink
-          href="https://twitter.com/purplappdotfun"
+          href="https://twitter.com/purpleappdotfun"
           color="purple.500"
           isExternal
         >
