@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <Flex align="center" flexWrap="wrap">
           {/* Purple AI link */}
           <ChakraLink
-            href="https://purple-3.gitbook.io/purple/purple-ai/purple-ai-coming-soon"
+            href="/ai"
             color="white"
             mr={[3, 4, 6]} // Adjusts margin dynamically
             isExternal
