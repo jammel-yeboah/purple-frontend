@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/api/:path*', // Intercept /api/* requests
-        destination: process.env.BACKEND_URL + '/api/:path*', // Forward to the backend URL
+        destination: 'https://cli-deploy-backend-production.up.railway.app' + '/api/:path*', // Forward to the backend URL
       },
     ];
   },
